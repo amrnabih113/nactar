@@ -1,0 +1,51 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+    id "com.google.gms.google-services"
+    // Make sure to apply the Google Services plugin at the end of the file
+}
+
+android {
+    namespace = "com.example.nectar"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = "25.1.8937393"
+    
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.example.nectar"
+        minSdk = 23
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+       
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    // Import the Firebase BoM (Bill of Materials)
+    implementation platform('com.google.firebase:firebase-bom:33.1.2')
+
+    // Add Firebase dependencies without specifying versions
+    implementation 'com.google.firebase:firebase-analytics'
+
+}
+
+flutter {
+    source = "../.."
+}

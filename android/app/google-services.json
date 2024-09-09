@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "369401484888",
+    "project_id": "nectar-5935c",
+    "storage_bucket": "nectar-5935c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369401484888:android:70831eb7e56300f5c8dc2d",
+        "android_client_info": {
+          "package_name": "com.example.nectar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA45VZVwr7H1SjdAs7IjgXb4KrOeMfst5w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
