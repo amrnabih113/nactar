@@ -1,6 +1,4 @@
-Here’s a README file for your Flutter project, **Nectar**:
 
----
 
 # Nectar
 
